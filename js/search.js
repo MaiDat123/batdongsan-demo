@@ -5,4 +5,7 @@ function rxb(){
   if(!filter.test(ten.value)){
       document.getElementById("XuatTB").innerHTML="Không tìm thấy kết quả";
   }
+  setTimeout(function () {
+    document.getElementById("XuatTB").innerHTML = "";
+  }, 2000);
 }
