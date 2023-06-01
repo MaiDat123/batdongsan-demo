@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper-element-bundle.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/content_sp.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Giới thiệu sản phẩm</title>
+    <style>
+        body {
+            background-color: #F2F2F2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="index.html"><img src="img/logo/logo.svg" alt="LOGO"></a>
+        <div class="header_menu">
+            <ul class="header_menu-left">
+                <li><a href="#">Nhà đất bán</a></li>
+                <li><a href="#">Nhà đất cho thuê</a></li>
+                <li><a href="#">Dự án</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Wiki BĐS</a></li>
+            </ul>
+            <ul class="header_menu-right">
+                <li><a class="header_menu-right header_menu-btn" href="#">Đăng nhập</a></li>
+                <li><a class="header_menu-right header_menu-btn" href="#">Đăng ký</a></li>
+                <li><a class="header_menu-right header_menu-btn btn" href="#">Đăng tin</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_nav">
+        <div class="textbox">
+            <input type="text" class="textbox_input">
+            <label for="" class="textbox_label">Dự án của bạn</label>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <form action="" method="post">
+            <div class="header_submenu">
+                <label for="">Loại nhà đất</label>
+                <ul class="submenu">
+                    <li><label for="">Tất cả nhà đất</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Căn hộ chung cư</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Các loại nhà bán</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Các loại đất bán</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Trang trại, khu nghỉ dưỡng</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Kho, nhà xưởng</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Bất động sản khác</label><input type="checkbox" name="" id=""></li>
+                </ul>
+            </div>
+            <div class="header_submenu">
+                <label for="">Khu vực & Dự án</label>
+                <ul class="submenu">
+                    <li><label for="">Tất cả nhà đất</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Căn hộ chung cư</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Các loại nhà đất</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Các loại đất bán</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Trang trại, khu nghỉ dưỡng</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Kho, nhà xưởng</label><input type="checkbox" name="" id=""></li>
+                    <li><label for="">Bất động sản khác</label><input type="checkbox" name="" id=""></li>
+                </ul>
+            </div>
+            <div class="header_submenu">
+                <label for="">Mức giá</label>
+                <ul class="submenu">
+                    <li><a href="#">Tất cả mức giá</a></li>
+                    <li><a href="#">Dưới 500 triệu</a></li>
+                    <li><a href="#">500 - 800 triệu</a></li>
+                    <li><a href="#">800 triệu - 1 tỷ</a></li>
+                    <li><a href="#">1 - 2 tỷ</a></li>
+                    <li><a href="#">2 - 3 tỷ</a></li>
+                    <li><a href="#">3 - 5 tỷ</a></li>
+                    <li><a href="#">5 - 7 tỷ</a></li>
+                </ul>
+            </div>
+            <div class="header_submenu">
+                <label for="">Diện tích</label>
+                <ul class="submenu">
+                    <li><a href="#">Tất cả diện tích</a></li>
+                    <li><a href="#">Dưới 30 m<sup>2</sup></a></li>
+                    <li><a href="#">30 - 50 m<sup>2</sup></a></li>
+                    <li><a href="#">50 - 80 m<sup>2</sup></a></li>
+                    <li><a href="#">80 - 100 m<sup>2</sup></a></li>
+                    <li><a href="#">100 - 150 m<sup>2</sup></a></li>
+                    <li><a href="#">150 - 200 m<sup>2</sup></a></li>
+                    <li><a href="#">200 - 250 m<sup>2</sup></a></li>
+                </ul>
+            </div>
+            <button class="nav_btn" type="reset"><i class="fa-solid fa-arrows-rotate"></i>Đặt lại</button>
+        </form>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+        <div class="khungbao">
+            <div class="subkhung"><a href="">
+                    <img src="https://file4.batdongsan.com.vn/crop/846x423/2023/02/01/20230201105908-4cef_wm.jpg" alt="TPHCM" class="active"></a>
+                <div class="caption"></div>
+            </div>
+            <div class="subkhung1">
+                <div class="box"><a href=""><img src="https://file4.batdongsan.com.vn/crop/423x210/2023/03/24/20230324154941-0b3c_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+                <div class="box"> <a href=""><img src="https://file4.batdongsan.com.vn/crop/210x210/2023/03/24/20230324154941-8028_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+                <div class="box"><a href=""><img src="https://file4.batdongsan.com.vn/crop/210x210/2023/02/01/20230201103009-663a_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+                <div class="box"><a href=""><img src="https://file4.batdongsan.com.vn/resize/1275x717/2023/02/01/20230201103050-2386_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a class="content_inform" href="#">Cho thuê</a> / <a class="content_inform" href="#">TP.HCM</a> / <a
+            class="content_inform" href="#">Thủ Đức</a> / <a class="content_inform" href="#">Văn Phòng Vạn Phúc</a>
+        <h1 class="content_title1">Văn phòng Vạn Phúc Thủ Đức giá chỉ 5tr/tháng</h1>
+        <div class="table_inform">
+            <div class="table_inform_col1">
+                <span class="title">Mức giá</span><br>
+                <span class="value">5 triệu / tháng</span>
+            </div>
+            <div class="table_inform_col2">
+                <span class="title">Diện tích</span><br>
+                <span class="value">30 m&sup3</span>
+            </div>
+            <div class="table_inform_col3">
+                <span class="title">Phòng ngủ</span><br>
+                <span class="value">1 PN</span>
+            </div>
+            <div class="table_inform_col4">
+                <i class="fa-solid fa-share-nodes"></i>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <h4 class="content_title2">Thông tin mô tả</h4>
+        <div class="content_description">
+            Kính chào quý khách. <br>
+            Cập nhật giá thuê hoặc mua căn hộ Times City và Times City Park Hill tháng 04/2023 LH hotline nhà to: 0936
+            272 654. <br>
+            * Căn hộ 1 phòng ngủ. <br>
+            - Giá đồ cơ bản: 10 - 10.5 triệu/tháng; <br>
+            - Giá đầy đủ đồ: 11 - 12 triệu/tháng; <br>
+            - Giá bán từ 2,6 - 2,7 tỷ. <br>
+            Liên hệ xem nhà & nhận tư vấn miễn phí: Hotline: 0936 272 654. <br>
+            ------------------------------------------------------ <br>
+            * Căn hộ 2 phòng ngủ. <br>
+            Diện tích: 69m² - 75m² - 83m² - 87m² - 90,1m² - 94,3m² - 97m² - 108m². <br>
+            - Giá đồ cơ bản: 12 - 14 triệu/tháng; <br>
+            - Giá đầy đủ đồ: 14 - 16 triệu/tháng; <br>
+            - Giá bán từ 3,6 tỷ - 75m², 4,2 tỷ - 90m², 5 tỷ - 108m². <br>
+            Liên hệ xem nhà & nhận tư vấn miễn phí hotline: 0936 272 654. <br>
+            ------------------------------------------------------ <br>
+            - Times 191,8m² giá 11 tỷ ban công Nam thoáng mát. <br>
+            Liên hệ xem nhà & nhận tư vấn miễn phí: Hotline: 0936 272 654. <br>
+            Dịch vụ tiện ích: <br>
+
+        </div>
+        <h4 class="content_title2">Địa điểm bất động sản</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.128104549612!2d106.72661537394528!3d10.801499258732981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175270a23f99a09%3A0x35f42414e5ed2314!2zQ2jDqm5oIFbDqm5oIFJvb2Z0b3A!5e0!3m2!1svi!2s!4v1685430192821!5m2!1svi!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h4 class="content_title2">Thông tin nổi bật</h4>
+        <div>
+            Quý khách thuê chung cư Times City có thể hưởng toàn bộ dịch vụ 5 sao Vinhomes phục vụ các tòa nhà ngoài ra
+            còn được. <br>
+            - Miễn phí quản lý dịch vụ 10 năm; <br>
+            - Miễn phí bơi tại bể bơi bốn mùa 4000m², miễn phí sân tập thể thao; <br>
+            - Hệ thống trường học liên cấp Vinschool từ mầm non đến cấp 3; <br>
+            - Trung tâm thương mại mua sắm, đại siêu thị Vinmart thực phẩm tươi, sạch và giá rẻ như chợ Vĩnh Tuy; <br>
+            - Bệnh viện Vinmec tiêu chuẩn quốc tế 5 sao, salon tóc Bella, nhà thuốc, siêu thị K - Mart có quá nhiều lợi
+            ích cho khách thuê tại đây, vượt trội so với các khu xung quanh. <br>
+            - Phí DV hàng tháng. <br>
+            * Phí đỗ xe ô tô: 1.250.000 VNĐ/tháng. <br>
+            * Phí đỗ xe máy: 45.000 VNĐ/tháng. <br>
+            Quý khách thuê xin vui lòng liên hệ: <br>
+            Vinhomes Times City. <br>
+            Quý khách thuê xin vui lòng liên hệ: SĐT: 0936 272 654. <br>
+        </div>
+        <div class="content_container swiper">
+            <div class="content_slide">
+                <div class="content_wrapper swiper-wrapper">
+                    <!-- item -->
+                    <div class="content_item swiper-slide">
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="khungbao">
+            <div class="subkhung"><a href="">
+                    <img src="https://file4.batdongsan.com.vn/crop/846x423/2021/12/03/20211203130418-4d63_wm.jpg" alt="TPHCM" class="active"></a>
+                <div class="caption"></div>
+            </div>
+            <div class="subkhung1">
+                <div class="box"><a href=""><img src="https://file4.batdongsan.com.vn/crop/423x210/2021/12/03/20211203130418-b4b8_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+                <div class="box"> <a href=""><img src="https://file4.batdongsan.com.vn/crop/210x210/2021/12/03/20211203130418-af62_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+                <div class="box"><a href=""><img src="https://file4.batdongsan.com.vn/crop/210x210/2023/04/20/20230420193223-b91d_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+                <div class="box"><a href=""><img src="https://file4.batdongsan.com.vn/resize/1275x717/2023/04/20/20230420193224-7d32_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a class="content_inform" href="#">Cho thuê</a> / <a class="content_inform" href="#">TP.HCM</a> / <a
+            class="content_inform" href="#">Thủ Đức</a> / <a class="content_inform" href="#">Văn Phòng Vạn Phúc</a>
+        <h1 class="content_title1">Văn phòng Vạn Phúc Thủ Đức giá chỉ 5tr/tháng</h1>
+        <div class="table_inform">
+            <div class="table_inform_col1">
+                <span class="title">Mức giá</span><br>
+                <span class="value">5 triệu / tháng</span>
+            </div>
+            <div class="table_inform_col2">
+                <span class="title">Diện tích</span><br>
+                <span class="value">30 m&sup3</span>
+            </div>
+            <div class="table_inform_col3">
+                <span class="title">Phòng ngủ</span><br>
+                <span class="value">1 PN</span>
+            </div>
+            <div class="table_inform_col4">
+                <i class="fa-solid fa-share-nodes"></i>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <h4 class="content_title2">Thông tin mô tả</h4>
+        <div class="content_description">
+            Kính chào quý khách. <br>
+            Cập nhật giá thuê hoặc mua căn hộ Times City và Times City Park Hill tháng 04/2023 LH hotline nhà to: 0936
+            272 654. <br>
+            * Căn hộ 1 phòng ngủ. <br>
+            - Giá đồ cơ bản: 10 - 10.5 triệu/tháng; <br>
+            - Giá đầy đủ đồ: 11 - 12 triệu/tháng; <br>
+            - Giá bán từ 2,6 - 2,7 tỷ. <br>
+            Liên hệ xem nhà & nhận tư vấn miễn phí: Hotline: 0936 272 654. <br>
+            ------------------------------------------------------ <br>
+            * Căn hộ 2 phòng ngủ. <br>
+            Diện tích: 69m² - 75m² - 83m² - 87m² - 90,1m² - 94,3m² - 97m² - 108m². <br>
+            - Giá đồ cơ bản: 12 - 14 triệu/tháng; <br>
+            - Giá đầy đủ đồ: 14 - 16 triệu/tháng; <br>
+            - Giá bán từ 3,6 tỷ - 75m², 4,2 tỷ - 90m², 5 tỷ - 108m². <br>
+            Liên hệ xem nhà & nhận tư vấn miễn phí hotline: 0936 272 654. <br>
+            ------------------------------------------------------ <br>
+            - Times 191,8m² giá 11 tỷ ban công Nam thoáng mát. <br>
+            Liên hệ xem nhà & nhận tư vấn miễn phí: Hotline: 0936 272 654. <br>
+            Dịch vụ tiện ích: <br>
+
+        </div>
+        <h4 class="content_title2">Địa điểm bất động sản</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.128104549612!2d106.72661537394528!3d10.801499258732981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175270a23f99a09%3A0x35f42414e5ed2314!2zQ2jDqm5oIFbDqm5oIFJvb2Z0b3A!5e0!3m2!1svi!2s!4v1685430192821!5m2!1svi!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h4 class="content_title2">Thông tin nổi bật</h4>
+        <div>
+            Quý khách thuê chung cư Times City có thể hưởng toàn bộ dịch vụ 5 sao Vinhomes phục vụ các tòa nhà ngoài ra
+            còn được. <br>
+            - Miễn phí quản lý dịch vụ 10 năm; <br>
+            - Miễn phí bơi tại bể bơi bốn mùa 4000m², miễn phí sân tập thể thao; <br>
+            - Hệ thống trường học liên cấp Vinschool từ mầm non đến cấp 3; <br>
+            - Trung tâm thương mại mua sắm, đại siêu thị Vinmart thực phẩm tươi, sạch và giá rẻ như chợ Vĩnh Tuy; <br>
+            - Bệnh viện Vinmec tiêu chuẩn quốc tế 5 sao, salon tóc Bella, nhà thuốc, siêu thị K - Mart có quá nhiều lợi
+            ích cho khách thuê tại đây, vượt trội so với các khu xung quanh. <br>
+            - Phí DV hàng tháng. <br>
+            * Phí đỗ xe ô tô: 1.250.000 VNĐ/tháng. <br>
+            * Phí đỗ xe máy: 45.000 VNĐ/tháng. <br>
+            Quý khách thuê xin vui lòng liên hệ: <br>
+            Vinhomes Times City. <br>
+            Quý khách thuê xin vui lòng liên hệ: SĐT: 0936 272 654. <br>
+        </div>
+        <div class="content_container swiper">
+            <div class="content_slide">
+                <div class="content_wrapper swiper-wrapper">
+                    <!-- item -->
+                    <div class="content_item swiper-slide">
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="khungbao">
+            <div class="subkhung"><a href="">
+                    <img src="https://file4.batdongsan.com.vn/resize/1275x717/2022/12/03/20221203143545-a3ca_wm.jpg" alt="TPHCM" class="active"></a>
+                <div class="caption"></div>
+            </div>
+            <div class="subkhung1">
+                <div class="box"><a href=""><img src="https://file4.batdongsan.com.vn/crop/846x423/2022/12/03/20221203143545-26b7_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+                <div class="box"> <a href=""><img src="https://file4.batdongsan.com.vn/crop/423x210/2022/12/03/20221203143545-a3ca_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+                <div class="box"><a href=""><img src="https://file4.batdongsan.com.vn/crop/210x210/2022/12/03/20221203143546-d7b3_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+                <div class="box"><a href=""><img src="https://file4.batdongsan.com.vn/crop/210x210/2022/12/03/20221203143545-94b3_wm.jpg" alt=""></a>
+                    <h4 class="subkhung_h4"></h4>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a class="content_inform" href="#">Cho thuê</a> / <a class="content_inform" href="#">TP.HCM</a> / <a
+            class="content_inform" href="#">Thủ Đức</a> / <a class="content_inform" href="#">Văn Phòng Vạn Phúc</a>
+        <h1 class="content_title1">Văn phòng Vạn Phúc Thủ Đức giá chỉ 5tr/tháng</h1>
+        <div class="table_inform">
+            <div class="table_inform_col1">
+                <span class="title">Mức giá</span><br>
+                <span class="value">5 triệu / tháng</span>
+            </div>
+            <div class="table_inform_col2">
+                <span class="title">Diện tích</span><br>
+                <span class="value">30 m&sup3</span>
+            </div>
+            <div class="table_inform_col3">
+                <span class="title">Phòng ngủ</span><br>
+                <span class="value">1 PN</span>
+            </div>
+            <div class="table_inform_col4">
+                <i class="fa-solid fa-share-nodes"></i>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+        <h4 class="content_title2">Thông tin mô tả</h4>
+        <div class="content_description">
+            Kính chào quý khách. <br>
+            Cập nhật giá thuê hoặc mua căn hộ Times City và Times City Park Hill tháng 04/2023 LH hotline nhà to: 0936
+            272 654. <br>
+            * Căn hộ 1 phòng ngủ. <br>
+            - Giá đồ cơ bản: 10 - 10.5 triệu/tháng; <br>
+            - Giá đầy đủ đồ: 11 - 12 triệu/tháng; <br>
+            - Giá bán từ 2,6 - 2,7 tỷ. <br>
+            Liên hệ xem nhà & nhận tư vấn miễn phí: Hotline: 0936 272 654. <br>
+            ------------------------------------------------------ <br>
+            * Căn hộ 2 phòng ngủ. <br>
+            Diện tích: 69m² - 75m² - 83m² - 87m² - 90,1m² - 94,3m² - 97m² - 108m². <br>
+            - Giá đồ cơ bản: 12 - 14 triệu/tháng; <br>
+            - Giá đầy đủ đồ: 14 - 16 triệu/tháng; <br>
+            - Giá bán từ 3,6 tỷ - 75m², 4,2 tỷ - 90m², 5 tỷ - 108m². <br>
+            Liên hệ xem nhà & nhận tư vấn miễn phí hotline: 0936 272 654. <br>
+            ------------------------------------------------------ <br>
+            - Times 191,8m² giá 11 tỷ ban công Nam thoáng mát. <br>
+            Liên hệ xem nhà & nhận tư vấn miễn phí: Hotline: 0936 272 654. <br>
+            Dịch vụ tiện ích: <br>
+
+        </div>
+        <h4 class="content_title2">Địa điểm bất động sản</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.128104549612!2d106.72661537394528!3d10.801499258732981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175270a23f99a09%3A0x35f42414e5ed2314!2zQ2jDqm5oIFbDqm5oIFJvb2Z0b3A!5e0!3m2!1svi!2s!4v1685430192821!5m2!1svi!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h4 class="content_title2">Thông tin nổi bật</h4>
+        <div>
+            Quý khách thuê chung cư Times City có thể hưởng toàn bộ dịch vụ 5 sao Vinhomes phục vụ các tòa nhà ngoài ra
+            còn được. <br>
+            - Miễn phí quản lý dịch vụ 10 năm; <br>
+            - Miễn phí bơi tại bể bơi bốn mùa 4000m², miễn phí sân tập thể thao; <br>
+            - Hệ thống trường học liên cấp Vinschool từ mầm non đến cấp 3; <br>
+            - Trung tâm thương mại mua sắm, đại siêu thị Vinmart thực phẩm tươi, sạch và giá rẻ như chợ Vĩnh Tuy; <br>
+            - Bệnh viện Vinmec tiêu chuẩn quốc tế 5 sao, salon tóc Bella, nhà thuốc, siêu thị K - Mart có quá nhiều lợi
+            ích cho khách thuê tại đây, vượt trội so với các khu xung quanh. <br>
+            - Phí DV hàng tháng. <br>
+            * Phí đỗ xe ô tô: 1.250.000 VNĐ/tháng. <br>
+            * Phí đỗ xe máy: 45.000 VNĐ/tháng. <br>
+            Quý khách thuê xin vui lòng liên hệ: <br>
+            Vinhomes Times City. <br>
+            Quý khách thuê xin vui lòng liên hệ: SĐT: 0936 272 654. <br>
+        </div>
+        <div class="content_container swiper">
+            <div class="content_slide">
+                <div class="content_wrapper swiper-wrapper">
+                    <!-- item -->
+                    <div class="content_item swiper-slide">
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- footer -->
+    <hr>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <div class="footer_logo">
+                    <img src="img/logo/logo_gray-5.svg" alt="">
+                </div>
+                <ul class="col_menu">
+                    <li>
+                        <h5>CÔNG TY CỔ PHẦN PROPERTYGURU VIỆT NAM</h5>
+                    </li>
+                    <li><i class="fa-solid fa-location-dot"></i>
+                        <h5>Tầng 31, Keangnam Hanoi Landmark, Phạm Hùng, Nam Từ Liêm, Hà Nội</h5>
+                    </li>
+                    <li><i class="fa-solid fa-phone-volume"></i>
+                        <h5>(024) 3562 5939 - (024) 3562 5940</h5>
+                    </li>
+                    <li>
+                        <img class="logo" src="img/logo/google_play.png" alt=""> <img class="logo"
+                            src="img/logo/app_store.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="col col_1">
+                <div class="footer_detail">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div>Hotline</div>
+                    <div>1900 1881</div>
+                </div>
+                <ul class="footer_detail-menu">
+                    <li><a href="#">HƯỚNG DẪN</a></li>
+                    <li><a href="#">Báo giá & hỗ trợ</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Thông báo</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="col col_2">
+                <div class="footer_detail">
+                    <i class="fa-solid fa-user"></i>
+                    <div>Hỗ trợ khách hàng</div>
+                    <div><a href="https://trogiup.batdongsan.com.vn/">trogiup.batdongsan.com.vn</a></div>
+                </div>
+                <ul class="footer_detail-menu">
+                    <li><a href="#">QUY ĐỊNH</a></li>
+                    <li><a href="#">Quy định đăng tin</a></li>
+                    <li><a href="#">Điều khoản thỏa thuận</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Giải quyết khiếu nại</a></li>
+                    <li><a href="#">Góp ý báo lỗi</a></li>
+                </ul>
+            </div>
+            <div class="col col_3">
+                <div class="footer_detail">
+                    <i class="fa-solid fa-headphones"></i>
+                    <div>Chăm sóc khách hàng</div>
+                    <div>
+                        <a href="https://trogiup.batdongsan.com.vn/" target="_blank">hotro@batdongsan.com.vn</a>
+                    </div>
+                </div>
+                <ul class="footer_detail-menu">
+                    <li>
+                        <label for="">ĐĂNG KÝ NHẮN TIN</label>
+                        <div class="sign">
+                            <input class="sign_input" type="text" name="" id="" placeholder="Nhập email của bạn">
+                            <button title="Đăng ký" type="submit" class="sign_input-btn"><i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+
+                    </li>
+                    <li>
+                        <label for="" style="font-weight: bold;color: #696969;">QUỐC GIA & NGÔN NGỮ</label>
+                        <br>
+                        <div class="country_menu">
+                            <ul>
+                                <li>Viet Nam</li>
+                                <li>Singapore</li>
+                                <li>Malaysia</li>
+                                <li>Thailand</li>
+                                <li>Indonesia</li>
+                                <li>Australia</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h5 style="margin-left: 20px;"> Xem chi nhánh của Batdongsan.com.vn</h5>
+        <div class="info_position">
+
+            <div class="info_col_1">
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+            </div>
+            <div class="info_col_2">
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+            </div>
+            <div class="info_col_3">
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h5 style="margin-left: 20px;">Copyright &#64; 2007 - 2023 Batdongsan.com.vn</h5>
+        <div class="final_info">
+            <div>
+                <ul class="menu_footer final_info_1">
+                    <li>Giấy ĐKKD số 0104630479 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 02/06/2010</li>
+                    <li>Giấy phép ICP số 2399/GP-STTTT do Sở TTTT Hà Nội cấp ngày 4/9/2014</li>
+                    <li>Giấy phép GH ICP số 3832/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 8/8/2019</li>
+                    <li>Giấy phép SĐ, BS GP ICP số 3833/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 8/8/2019</li>
+                    <li>Giấy xác nhận số 1728/GXN-TTĐT do Sở TTTT Hà Nội cấp ngày 23/6/2020</li>
+                    <li>Giấy phép GH ICP số 2886/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 09/08/2021</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="menu_footer final_info_2">
+                    <li>Chịu trách nhiệm nội dung GP ICP: Bà Đặng Thị Hường</li>
+                    <li>Chịu trách nhiệm sàn GDTMĐT: Ông Nguyễn Đức Thắng</li>
+                    <li>Quy chế, quy định giao dịch có hiệu lực từ 27/02/2023</li>
+                    <li>Ghi rõ nguồn "Batdongsan.com.vn" khi phát hành lại <br> thông tin từ website này.</li>
+                </ul>
+            </div>
+            <div class="menu_footer final_info_3">
+                <img src="img/logo/da-dang-ki-bct.svg" alt="LOGO">
+            </div>
+            <div class="menu_footer final_info_4">
+                <a href="#"><i class="fa-brands fa-square-facebook"> </i></a>
+                <a href="#"><i class="fa-brands fa-youtube"> </i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"> </i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

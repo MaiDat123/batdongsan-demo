@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/khungbao.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/formlogin.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="index.html"><img src="img/logo/logo.svg" alt="LOGO"></a>
+        <div class="header_menu">
+            <ul class="header_menu-left">
+                <li><a href="#">Nhà đất bán</a></li>
+                <li><a href="#">Nhà đất cho thuê</a></li>
+                <li><a href="#">Dự án</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Wiki BĐS</a></li>
+            </ul>
+            <ul class="header_menu-right">
+                <li><a class="btnLogin-popup" href="#">Đăng nhập</a></li>
+                <li><a class="header_menu-right header_menu-btn" href="#">Đăng tin</a></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close-circle-outline"></ion-icon></span>
+            <div class="form_box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input title="email" name="email" type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input title="pass" name="password" type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember_forgot">
+                        <label>
+                            <input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form_box register">
+                <h2>Registration</h2>
+                <form action="http://tranvanhung.fitstu.net/hufi/thiet-ke-web/form.php">
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input name="user_name" type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input name="email" type="email" required>
+                        <label>Email</label>
+                    </div>
+    
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input name="password" type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember_forgot">
+                        <label>
+                            <input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                    </div>
+            </div>
+        </div>
+        <script src="ap.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="./js/form.js"></script>
+
+    </div>
+    <div class="header_nav">
+        <div class="textbox">
+           <form action="./slider.html">
+            <input type="text" name="text" id="search">
+            <button onclick="rxb()">Search</button>
+            <p id="XuatTB"></p>
+        <script src="./js/search.js"></script>
+        </div>
+        <form action="" method="post">
+            <div class="header_submenu">
+                <label for="">Loại nhà đất</label>
+                <ul class="submenu">
+                    <li><label for="">Tất cả nhà đất</label></li>
+                    <li><label for="">Căn hộ chung cư</label></li>
+                    <li><label for="">Các loại nhà bán</label></li>
+                    <li><label for="">Các loại đất bán</label></li>
+                    <li><label for="">Trang trại, khu nghỉ dưỡng</label></li>
+                    <li><label for="">Kho, nhà xưởng</label></li>
+                    <li><label for="">Bất động sản khác</label></li>
+                </ul>
+            </div>
+            <div class="header_submenu">
+                <label for="">Khu vực & Dự án</label>
+                <ul class="submenu">
+                    <li><label for="">Tất cả dự án</label></li>
+                    <li><label for="">Dự án chung cư</label></li>
+                    <li><label for="">Dự án Habitat</label></li>
+                    <li><label for="">Đầu tư theo khu vực</label></li>
+                    <li><label for="">Khu vực ngoại ô</label></li>
+                    <li><label for="">Khu vực đã quy hoạch</label></li>
+                    <li><label for="">Bất động sản khác</label></li>
+                </ul>
+            </div>
+            <div class="header_submenu">
+                <label for="">Mức giá</label>
+                <ul class="submenu">
+                    <li><a href="#">Tất cả mức giá</a></li>
+                    <li><a href="#">Dưới 500 triệu</a></li>
+                    <li><a href="#">500 - 800 triệu</a></li>
+                    <li><a href="#">800 triệu - 1 tỷ</a></li>
+                    <li><a href="#">1 - 2 tỷ</a></li>
+                    <li><a href="#">2 - 3 tỷ</a></li>
+                    <li><a href="#">3 - 5 tỷ</a></li>
+                    <li><a href="#">5 - 7 tỷ</a></li>
+                </ul>
+            </div>
+            <div class="header_submenu">
+                <label for="">Diện tích</label>
+                <ul class="submenu">
+                    <li><a href="#">Tất cả diện tích</a></li>
+                    <li><a href="#">Dưới 30 m<sup>2</sup></a></li>
+                    <li><a href="#">30 - 50 m<sup>2</sup></a></li>
+                    <li><a href="#">50 - 80 m<sup>2</sup></a></li>
+                    <li><a href="#">80 - 100 m<sup>2</sup></a></li>
+                    <li><a href="#">100 - 150 m<sup>2</sup></a></li>
+                    <li><a href="#">150 - 200 m<sup>2</sup></a></li>
+                    <li><a href="#">200 - 250 m<sup>2</sup></a></li>
+                </ul>
+            </div>
+            <button class="nav_btn" type="reset"><i class="fa-solid fa-arrows-rotate"></i>Đặt lại</button>
+        </form>
+    </div>
+    <!-- content -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+    </style>
+    <!----BANNER HEADER START-->
+    <div class="slider">    
+        <div class="slides">
+            <!--radio star-->
+            <input title="Anh 1" type="radio" name="radio-btn" id="radio1">
+            <input title="Anh 2" type="radio" name="radio-btn" id="radio2">
+            <input title="Anh 3" type="radio" name="radio-btn" id="radio3">
+            <input title="Anh 4" type="radio" name="radio-btn" id="radio4">
+            <!--radio end-->
+            <!--slides start-->
+            <div class="slide first">
+                <img src="./img/img/banner-bat-dong-san-00.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/img/banner-bat-dong-san-05.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/img/banner-bat-dong-san-12.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/img/head1.jpg" alt="">
+            </div>
+            <div class="nagative-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--slides end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+    </div>
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function()
+        {
+            document.getElementById('radio' +counter).checked=true;
+            counter++;
+            if(counter>4)
+            {
+                counter=1;
+            }
+        },5000);
+    </script>
+     <!----BANNER HEADER END-->
+    <div id="wrapper">
+        <div class="title1">Bất động sản theo địa điểm</div>
+        <div class="khungbao">
+            <div class="subkhung"><a href="./about.html">
+                    <img src="img/img-khung/HCM-web-2.jpg" alt="TPHCM" class="active">
+                    <img src="img/img-khung/HCM-web-3.jpg" alt="TPHCM"></a>
+                <div class="caption">TP.Hồ Chí Minh</div>
+            </div>
+            <div class="subkhung1">
+                <div class="box"><a href="./about.html"><img src="img/img-khung/HN-web-2.jpg" alt=""></a>
+                    <h4 class="subkhung_h4">Hà Nội</h4>
+                </div>
+                <div class="box"> <a href="./about.html"><img src="img/img-khung/DDN-web-2.jpg" alt=""></a>
+                    <h4 class="subkhung_h4">Đà Nẵng</h4>
+                </div>
+                <div class="box"><a href="./about.html"><img src="img/img-khung/BD-web-1.jpg" alt=""></a>
+                    <h4 class="subkhung_h4">Bình Dương</h4>
+                </div>
+                <div class="box"><a href="./about.html"><img src="img/img-khung/DNA-web-1.jpg" alt=""></a>
+                    <h4 class="subkhung_h4">Đồng Nai</h4>
+                </div>
+            </div>
+        </div>
+        <div class="sub">
+            <ul>
+                <li><a href="">Vinhomes Center Park</a></li>
+                <li><a href="">Vinhomes Grand Park</a></li>
+                <li><a href="">Vinhomes Ocean City</a></li>
+                <li><a href="">Ba Ria-Vung Tau Pearl</a></li>
+                <li><a href="">Bcons Green View</a></li>
+                <li><a href="">Granduer Palce</a></li>
+                <li><a href="">Vinhomes Smart CiTy</a></li>
+            </ul>
+        </div>
+        <div class="tintuc">
+            <div id="titletin">Tin tức bất động sản</div>
+            <div class="subtintuc"><img src="./img/img/tintucbds1.jpg" alt="">
+                <a title="Tìm hiểu đất TSC Là Gì? Đất TSC Có Được Cấp Sổ Đỏ Không [2023]" href=""><span>Tìm hiểu đất TSC
+                        Là Gì? Đất TSC Có Được Cấp Sổ Đỏ Không [2023]</span></a>
+            </div>
+            <div class="subtintuc"><img src="./img/img/tintucbds2.jpg" alt="">
+                <a title="" href=""><span>Đất động sản giá trị thực lên ngôi, ngôi sao sáng nửa đầu năm 2023?</span></a>
+            </div>
+            <div class="subtintuc"><img src="./img/img/tintucbds3.jpeg" alt="">
+                <a title="Điều Kiện, Thủ Tục Tách Thửa Đất Cho Con năm 2023" href=""><span>Điều Kiện, Thủ Tục Và Lưu Ý
+                        Khi Đi Tách Thửa Đất Cho Con năm 2023</span></a>
+            </div>
+        </div>
+        <script>
+            const images = document.querySelectorAll('.subkhung img');
+            let index = 0;
+
+            setInterval(() => {
+                images[index].classList.remove('active');
+                index++;
+                if (index === images.length) {
+                    index = 0;
+                }
+                images[index].classList.add('active');
+            }, 5000);
+        </script>
+
+        <div id="banner">
+                <a href="./index.html"><img src="./img/img/banner1.jpg" alt=""></a>
+        </div>
+        <div class="headline">Bất động sản dành cho bạn</div>
+
+        <ul class="product">
+            <a target="_blank" href="about_sp1.html" target="_blank">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a target="_blank" href="about_sp1.html" target="_blank" class="product-thumb">
+                                <img src="https://file4.batdongsan.com.vn/crop/393x222/2023/02/11/20230211170904-f562_wm.jpg"
+                                    alt="">
+                            </a>
+                            <a target="_blank" href="about_sp1.html" target="_blank" class="buy-now">Xem ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a target="_blank" href="about_sp1.html" target="_blank" class="product-cat">New</a>
+                            <a target="_blank" href="about_sp1.html" target="_blank" class="product-name">Văn phòng Vạn Phúc Thủ Đức giá chỉ
+                                5tr/tháng</a>
+                            <div class="product-price">
+                                <h4>Giá: 5triệu/tháng</h4>
+                                <h4>Diện tích: 30 m²</h4>
+                            </div>
+                            <div class="address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Thủ Đức, Hồ Chí Minh</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </a>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp2.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2022/08/23/20220823180336-c773_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp2.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp2.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp2.html" class="product-name">Cần tiền thanh toán ngân hàng cần ra gấp căn Republic Plaza
+                            Cộng Hòa...</a>
+                        <div class="product-price">
+                            <h4>Giá: 2.2 tỷ</h4>
+                            <h4>Diện tích: 51 m² </h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Thủ Đức, Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp3.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2023/02/22/20230222065915-12df_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp3.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp3.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp3.html" class="product-name">Cần cho thuê trệt lầu nhà nguyên căn Vạn Phúc Thủ Đức, thích
+                            hợp làm...</a>
+                        <div class="product-price">
+                            <h4>Giá: 20 triệu/tháng </h4>
+                            <h4>Diện tích: 102 m²</h4>
+                        </div>
+                        <div class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Thủ Đức, Hồ Chí Minh</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp4.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2023/04/26/20230426080505-79c3_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp4.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp4.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp4.html" class="product-name">Bán Đất 81m2 thôn Bắc Thượng - Quang Tiến - Sóc Sơn. Chỉ 12tr/m
+                            Nga...</a>
+                        <div class="product-price">
+                            <h4>Giá: 1 tỷ</h4>
+                            <h4>Diện tích: 81 m²</h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Thủ Đức, Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp5.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2023/03/30/20230330142937-7217_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp5.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp5.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp5.html" class="product-name">Giảm chào 500tr - Nhà mới xây Cổ Linh gần 50m2, 4 tầng, chỉ còn
+                            3.9tỷ</a>
+                        <div class="product-price">
+                            <h4>Giá: 3.9 tỷ </h4>
+                            <h4>Diện tích: 50 m²</h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Long Biên, Hà Nội</span>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp6.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2023/04/14/20230414155630-a71d_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp6.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp6.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp6.html" class="product-name">Cần cho thuê gấp căn hộ cao cấp Park Legend 1PN, 2PN, 3PN nhà
+                            đẹp ở...</a>
+                        <div class="product-price">
+                            <h4>Giá: 10 triệu/tháng</h4>
+                            <h4>Diện tích: 72 m²</h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Tân Bình, Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp7.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2022/06/25/20220625104118-f3e2_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp7.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp7.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp7.html" class="product-name">Bán căn 2 phòng ngủ 2 tỷ 650 Dragon Hill 2, gọi 0943 330
+                            ***</a>
+                        <div class="product-price">
+                            <h4>Giá: 2.65 tỷ</h4>
+                            <h4> Diện tích:72 m²</h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nhà Bè, Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp8.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2023/02/11/20230211220456-48dc_wm.jpeg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp8.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp8.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp8.html" class="product-name">Chính chủ bán nhà Cityland Garden Hills, P5, Gò Vấp. 114m2, nhà
+                            đẹp,...</a>
+                        <div class="product-price">
+                            <h4>Giá: 24 tỷ </h4>
+                            <h4>Diện tích: 112 m²</h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Gò Vấp, Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp9.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2023/04/29/20230429203446-fe70_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp9.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp9.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp9.html" class="product-name">Mới giảm giá nhà đẹp, vị trí hiếm, hẻm xe hơi Nơ Trang Long gần
+                            view sông...</a>
+                        <div class="product-price">
+                            <h4>Giá: 9.4 tỷ</h4>
+                            <h4>Diện tích: 81 m² </h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bình Thạnh, Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp10.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2023/04/28/20230428081425-51a9_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp10.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp10.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp10.html" class="product-name">Bán nhà HXT 1 căn ra mặt tiền, nhà chưa qua đầu tư - DT vàng
+                            4,8x20m...</a>
+                        <div class="product-price">
+                            <h4>Giá: 7.99 tỷ</h4>
+                            <h4>Diện tích: 92 m² </h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bình Thạnh, Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp11.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2023/02/04/20230204214331-f95c_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp11.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp11.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp11.html" class="product-name">Bán nhà mới 100% HXH đường Nơ Trang Long 40m2 (4m x 10m), 4
+                            tầng...</a>
+                        <div class="product-price">
+                            <h4>Giá: 5.5 tỷ</h4>
+                            <h4>Diện tích: 42 m² </h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bình Thạnh, Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a target="_blank" href="about_sp12.html" class="product-thumb"> <img
+                                src="https://file4.batdongsan.com.vn/crop/393x222/2023/05/12/20230512222708-db53_wm.jpg"
+                                alt=""></a>
+                        <a target="_blank" href="about_sp12.html" class="buy-now">Xem ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a target="_blank" href="about_sp12.html" class="product-cat">New</a>
+                        <a target="_blank" href="about_sp12.html" class="product-name">Bán nhà mặt tiền Nơ Trang Long P13 Bình Thạnh. DT 4,5 x 22m ,6
+                            tầng giá...</a>
+                        <div class="product-price">
+                            <h4>Giá: 19 tỷ</h4>
+                            <h4>Diện tích: 99 m² </h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Thủ Đức, Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="list_page">
+        <div class="item">
+            <a href="#">1</a>
+        </div>
+        <div class="item">
+            <a href="#">2</a>
+        </div>
+        <div class="item">
+            <a href="#">3</a>
+        </div>
+        <div class="item">
+            <a href="#">4</a>
+        </div>
+        <div class="item">
+            <a href="#">5</a>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <div class="footer_logo">
+                    <img src="img/logo/logo_gray-5.svg" alt="">
+                </div>
+                <ul class="col_menu">
+                    <li>
+                        <h5>CÔNG TY CỔ PHẦN PROPERTYGURU VIỆT NAM</h5>
+                    </li>
+                    <li><i class="fa-solid fa-location-dot"></i>
+                        <h5>Tầng 31, Keangnam Hanoi Landmark, Phạm Hùng, Nam Từ Liêm, Hà Nội</h5>
+                    </li>
+                    <li><i class="fa-solid fa-phone-volume"></i>
+                        <h5>(024) 3562 5939 - (024) 3562 5940</h5>
+                    </li>
+                    <li>
+                        <img class="logo" src="img/logo/google_play.png" alt=""> <img class="logo"
+                            src="img/logo/app_store.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="col col_1">
+                <div class="footer_detail">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div>Hotline</div>
+                    <div>1900 1881</div>
+                </div>
+                <ul class="footer_detail-menu">
+                    <li><a href="#">HƯỚNG DẪN</a></li>
+                    <li><a href="#">Báo giá & hỗ trợ</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Thông báo</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="col col_2">
+                <div class="footer_detail">
+                    <i class="fa-solid fa-user"></i>
+                    <div>Hỗ trợ khách hàng</div>
+                    <div><a href="https://trogiup.batdongsan.com.vn/">trogiup.batdongsan.com.vn</a></div>
+                </div>
+                <ul class="footer_detail-menu">
+                    <li><a href="#">QUY ĐỊNH</a></li>
+                    <li><a href="#">Quy định đăng tin</a></li>
+                    <li><a href="#">Điều khoản thỏa thuận</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Giải quyết khiếu nại</a></li>
+                    <li><a href="#">Góp ý báo lỗi</a></li>
+                </ul>
+            </div>
+            <div class="col col_3">
+                <div class="footer_detail">
+                    <i class="fa-solid fa-headphones"></i>
+                    <div>Chăm sóc khách hàng</div>
+                    <div>
+                        <a href="https://trogiup.batdongsan.com.vn/" target="_blank">hotro@batdongsan.com.vn</a>
+                    </div>
+                </div>
+                <ul class="footer_detail-menu">
+                    <li>
+                        <label for="">ĐĂNG KÝ NHẮN TIN</label>
+                        <div class="sign">
+                            <input class="sign_input" type="text" name="" id="" placeholder="Nhập email của bạn">
+                            <button title="Đăng ký" type="submit" class="sign_input-btn"><i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+
+                    </li>
+                    <li>
+                        <label for="" style="font-weight: bold;color: #696969;">QUỐC GIA & NGÔN NGỮ</label>
+                        <br>
+                        <div class="country_menu">
+                            <ul>
+                                <li>Viet Nam</li>
+                                <li>Singapore</li>
+                                <li>Malaysia</li>
+                                <li>Thailand</li>
+                                <li>Indonesia</li>
+                                <li>Australia</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h5 style="margin-left: 20px;"> Xem chi nhánh của Batdongsan.com.vn</h5>
+        <div class="info_position">
+
+            <div class="info_col_1">
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+            </div>
+            <div class="info_col_2">
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+            </div>
+            <div class="info_col_3">
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+                <div class="info">
+                    <label for="">Chi nhánh TP. Hồ Chí Minh</label>
+                    <p>Tầng 3, Tháp B tòa nhà Viettel Complex, 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TP. Hồ Chí
+                        Minh
+                        <br>Điện thoại: 0904 893 279 - 0904 946 163
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h5 style="margin-left: 20px;">Copyright &#64; 2007 - 2023 Batdongsan.com.vn</h5>
+        <div class="final_info">
+            <div>
+                <ul class="menu_footer final_info_1">
+                    <li>Giấy ĐKKD số 0104630479 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 02/06/2010</li>
+                    <li>Giấy phép ICP số 2399/GP-STTTT do Sở TTTT Hà Nội cấp ngày 4/9/2014</li>
+                    <li>Giấy phép GH ICP số 3832/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 8/8/2019</li>
+                    <li>Giấy phép SĐ, BS GP ICP số 3833/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 8/8/2019</li>
+                    <li>Giấy xác nhận số 1728/GXN-TTĐT do Sở TTTT Hà Nội cấp ngày 23/6/2020</li>
+                    <li>Giấy phép GH ICP số 2886/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 09/08/2021</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="menu_footer final_info_2">
+                    <li>Chịu trách nhiệm nội dung GP ICP: Bà Đặng Thị Hường</li>
+                    <li>Chịu trách nhiệm sàn GDTMĐT: Ông Nguyễn Đức Thắng</li>
+                    <li>Quy chế, quy định giao dịch có hiệu lực từ 27/02/2023</li>
+                    <li>Ghi rõ nguồn "Batdongsan.com.vn" khi phát hành lại <br> thông tin từ website này.</li>
+                </ul>
+            </div>
+            <div class="menu_footer final_info_3">
+                <img src="img/logo/da-dang-ki-bct.svg" alt="LOGO">
+            </div>
+            <div class="menu_footer final_info_4">
+                <a href="#"><i class="fa-brands fa-square-facebook"> </i></a>
+                <a href="#"><i class="fa-brands fa-youtube"> </i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"> </i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
